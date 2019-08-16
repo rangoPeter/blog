@@ -63,7 +63,7 @@ class Home extends React.Component {
                                             style={{ width: "100%", marginBottom:20}}
                                         >
                                             <Meta
-                                                title={<h3><Link to={`/blog/${item.number}`}>{item.title}</Link></h3>}
+                                                title={<h3><Link to={`/detail/${item.number}`}>{item.title}</Link></h3>}
                                                 description={
                                                     <Row>
                                                         <Row style={{display:'flex'}}>
@@ -97,9 +97,9 @@ class Home extends React.Component {
                                 })
                             ):null
                         }
-                    <Pagination 
-                        current={page} 
-                        total={issues.length} 
+                    <Pagination
+                        current={page}
+                        total={issues.length}
                         pageSize={pageNum}
                         onChange={(page, pageSize) => this.pageChange(page, pageSize)}
                         hideOnSinglePage={true}

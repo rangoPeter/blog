@@ -31,7 +31,7 @@ class Archive extends React.Component {
                                 issues&&issues.length?(
                                     issues.map((item,index)=>{
                                         return (<Timeline.Item key={index}>
-                                            <Link to={`/blog/${item.number}`}>
+                                            <Link to={`/detail/${item.number}`}>
                                             <span style={{marginRight:50}}>{item.title}</span>
                                             <span>{item.created_at}</span>
                                             </Link>

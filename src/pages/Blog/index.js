@@ -45,9 +45,9 @@ class Blog extends React.Component {
         const self = this;
         axios.get(`https://api.github.com/repos/rangoPeter/blog/issues/` + path, {
             params: {
-                creator: 'leisunlove',
-                clientID: 'a3830a2b79a2f68db90a',
-                clientSecret: '2138827d6d1c2cb76164d7c3b334c2d26fcb0d69'
+                creator: 'leisunlove'
+                // client_id: '797bcc38ff786201e149',
+                // client_secret: 'a50e58f138828bbe362b372eb0c52def70e7b621'
             }
         }).then((response) => {
                 if (response.status === 200) {

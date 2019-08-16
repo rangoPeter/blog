@@ -36,9 +36,7 @@ class App extends Component {
   getBlogApiData() {
     axios.get(`https://api.github.com/repos/rangopeter/blog/issues`, {
       params: {
-        creator: 'rangopeter',
-        clientID: 'a3830a2b79a2f68db90a',
-        clientSecret: '2138827d6d1c2cb76164d7c3b334c2d26fcb0d69'
+        creator: 'rangopeter'
       },
     }).then((response) => {
       if (response.status === 200) {
@@ -61,7 +59,7 @@ class App extends Component {
     })
     return data;
   }
-
+  
   render() {
     return (
       <BrowserRouter>
@@ -71,7 +69,7 @@ class App extends Component {
           {/* <div>
             <BackTop>
                 <div className="ant-back-top-inner">UP</div>
-            </BackTop>
+            </BackTop> 
           </div> */}
           {/* 头部组件 */}
           <Header />

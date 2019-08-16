@@ -10,13 +10,13 @@ const TagBlog = asyncComponent(() => import("./pages/TagBlog"));
 const App = asyncComponent(() => import("./App"));
 
 export default class Router extends React.Component {
-    
+
     render() {
         return (
             <BrowserRouter>
                 <App>
                     <Switch>
-                        <Route exact path='/blog/:number' component={Blog} />
+                        <Route exact path='/detail/:number' component={Blog} />
                         <Route exact path='/tagblog/:name' component={TagBlog} />
                         <Route exact path='/archive' component={Archive} />
                         <Route exact path='/' component={Home} />

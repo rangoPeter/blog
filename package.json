@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "http://rangoPeter.github.io/",
   "dependencies": {
     "antd": "3.4.3",
     "autoprefixer": "7.1.6",

@@ -57,7 +57,7 @@ class RightNav extends React.Component {
             <Row>
                 <Card bordered={false} hoverable={true} className="card" cover={<img src={require('../../img/headbg.jpeg')} />}>
                     <div className="authorImg">
-                        <img src={require('../../img/headimg.jpg')} alt="" />
+                        <img src="tp://g.hiphotos.baidu.com/zhidao/pic/item/2e2eb9389b504fc29366b8d7e7dde71190ef6d22.jpg" alt="" />
                     </div>
                     <Meta
                         title={
@@ -73,8 +73,7 @@ class RightNav extends React.Component {
                                 </p>
                                 <p className="abstract">博客已上线：{sysTime}</p>
                                 <p className="abstract">其他项目：</p>
-                                <p className="abstract">1.<a target="_blank" href="http://search.yx319.cn">前端导航 search.yx319.cn</a></p>
-                                <p className="abstract">2.<a target="_blank" href="https://github.com/Will0319/react-yx-app">React脚手架</a></p>
+                                <p className="abstract">1.<a target="_blank" href="#">vue后台管理系统模板</a></p>
                             </div>
                         }
                     />
@@ -88,17 +87,11 @@ class RightNav extends React.Component {
                         <Tooltip title="github">
                             <Icon type="github" style={{fontSize:30}} onClick={()=>this.toGitIndex()}/>
                         </Tooltip>
-                        <Tooltip
-                        title={
-                            <img
-                            className="wx"
-                            src={require('../../img/Wechat.png')}
-                            alt="微信"
-                            width={100}
-                            height={100}
-                            />
-                        }>
+                        <Tooltip title="base64解码“MTg0MzQzNjQ5OTA=”">
                             <Icon type="wechat" style={{fontSize:30}}/>
+                        </Tooltip>
+                        <Tooltip title="base64解码“MTkyNTc4ODMyNg==”">
+                            <Icon type="qq" style={{fontSize:30}}/>
                         </Tooltip>
                     </div>
                     </div>
@@ -125,7 +118,7 @@ class RightNav extends React.Component {
                                 if (index<10){
                                     return(
                                         <li key={index} className="tag">
-                                            <Link to={`/blog/${item.number}`}>{item.title}</Link>
+                                            <Link to={`/detail/${item.number}`}>{item.title}</Link>
                                         </li>
                                     )
                                 }

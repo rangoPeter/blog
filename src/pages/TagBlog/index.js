@@ -37,8 +37,6 @@ export default class TagBlog extends React.Component {
         axios.get(`https://api.github.com/repos/${CONFIG['owner']}/blog/issues`, {
             params: {
                 creator: 'rangoPeter',
-                clientID: 'a3830a2b79a2f68db90a',
-                clientSecret: '2138827d6d1c2cb76164d7c3b334c2d26fcb0d69',
                 labels: data
             },
         }).then((response) => {
@@ -85,7 +83,7 @@ export default class TagBlog extends React.Component {
                                 <List.Item>
                                     <List.Item.Meta
                                         style={{width:'100%'}}
-                                        title={<Link to={`/blog/${item.number}`} style={{fontSize:18}}>{item.title}</Link>}
+                                        title={<Link to={`/detail/${item.number}`} style={{fontSize:18}}>{item.title}</Link>}
                                         description={
                                             <Row>
                                                 <Row style={{ display: 'flex' }}>
