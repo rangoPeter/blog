@@ -10,13 +10,13 @@ const { Meta } = Card;
 class RightNav extends React.Component {
     state={
         taglist:[],
-        sysTime: TimesFun('2018-08-08 22:00:00')
+        sysTime: TimesFun('2019-08-08 22:00:00')
     }
     componentWillMount() {
         const {issues} = this.props;
         this.noRepeat(issues);
         setInterval(() => {
-            let sysTime = TimesFun('2018-08-08 22:00:00')
+            let sysTime = TimesFun('2019-08-08 22:00:00')
             this.setState({
                 sysTime
             })
